@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(160, 158, 158);
+}
+.main__container {
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.main__header {
+  color: rgb(172, 3, 3);
+  font-size: 30px;
+  font-weight: 700;
+  margin: auto;
+
+  padding-bottom: 3%;
+}
+.main__text__top {
+  padding-bottom: 0.5%;
+  font-size: 20px;
+  min-width: 350px;
+  text-align: center;
+}
+.main__text__btm {
+  padding-bottom: 3%;
+  font-size: 20px;
+  min-width: 350px;
+  text-align: center;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3%;
+}
+
+.phone__container,
+.code__container {
+  flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+.code__header,
+.phone__header {
+  font-size: 18px;
+}
+
+#collectCode,
+#phoneNum {
+  font-size: 17px;
+  text-align: center;
+  min-height: 40px;
+}
+
+.collect__button,
+.modal__button,
+.modal__restart__button,
+.modal__next__button {
+  border-style: none;
+  background-color: rgb(151, 2, 2);
+  max-height: 200px;
+  min-height: 50px;
+  min-width: 200px;
+  margin-top: 1%;
+  font-size: 18px;
+}
+
+.collect__button:hover,
+.modal__button:hover,
+.modal__restart__button:hover,
+.modal__next__button:hover {
+  background-color: rgb(190, 3, 3);
+}
+
+.collect__button:focus,
+.modal__button:focus,
+.modal__restart__button:focus,
+.modal__next__button:focus {
+  background-color: rgb(255, 0, 0);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #8d8d8d;
+  margin: 12.5% auto;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  max-width: 40%;
+  min-width: 10%;
+  text-align: center;
+}
+
+.modal__text__top {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 2%;
+}
+
+.modal__text__btm {
+  padding: 0 20% 4% 20%;
+}

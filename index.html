@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rekrutacja Akademia Envelo - frontend</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main__container">
+            <div class="main__header">ENVELO</div>
+            <div class="main__text__top">Możesz mieć swoją przesyłkę w kilkanaście sekund.</div>
+            <div class="main__text__btm">Rozpocznij klikając w przycisk.</div>
+            <form id="packageForm">
+                <div class="input__container hidden">
+                    <div class="phone__container">
+                        <div class="phone__header">Numer telefonu</div>
+                        <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="phoneNum" id="phoneNum" maxlength="9" placeholder="Wprowadź numer telefonu"required>
+                    </div>
+                    <div class="code__container">
+                        <div class="code__header">Kod odbioru</div>
+                        <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="collectCode" id="collectCode" maxlength="4" placeholder="Wprowadź kod odbioru"required>
+                    </div>
+            </form>
+        </div>
+        <button class="collect__button">Odbierz paczkę</button>
+        <button class="modal__button hidden">Odbierz paczkę</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal__text__top">Paczka odebrana!</div>
+                <div class="modal__text__btm">Zrobiłeś to w czasie 10 sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</div>
+                <button class="modal__restart__button">To wszystko na dziś</button>
+                <button class="modal__next__button">Odbierz kolejną paczkę</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
